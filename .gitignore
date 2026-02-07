@@ -1,0 +1,12 @@
+# Markdown files (security policy)
+*.md
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
