@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vylos AI - App Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            color: white;
+        }
+        .app-icon {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeInScale 0.6s ease-out;
+        }
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+        .tagline {
+            font-size: 1.5em;
+            opacity: 0.95;
+            font-weight: 300;
+            margin-bottom: 10px;
+            animation: fadeInUp 0.6s ease-out 0.4s both;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.85;
+            animation: fadeInUp 0.6s ease-out 0.6s both;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Feature Highlights Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .feature-card p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .card p {
+            margin-bottom: 15px;
+        }
+        .card ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .card li {
+            margin-bottom: 10px;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-box h3 {
+            margin-bottom: 15px;
+        }
+        .email-link {
+            color: #ffd700;
+            font-size: 1.2em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        .app-section {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .app-section h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .tagline {
+                font-size: 1.2em;
+            }
+            .app-icon {
+                width: 120px;
+                height: 120px;
+            }
+            .card {
+                padding: 25px;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <img src="app-icon.png" alt="Vylos AI App Icon" class="app-icon">
+            <h1>Vylos AI</h1>
+            <p class="tagline">Challenge Friends Worldwide</p>
+            <p class="subtitle">Real-time multiplayer gaming at your fingertips</p>
+        </div>
+
+        <!-- Feature Highlights -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Real-Time Multiplayer</h3>
+                <p>Instant connection with friends. No waiting, no lag—just pure gaming fun.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>In-Game Chat</h3>
+                <p>Talk smack, strategize, or just chat while you play. Communication made easy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3>Simple & Addictive</h3>
+                <p>Classic gameplay with modern polish. Easy to learn, hard to master.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Play Anywhere</h3>
+                <p>Whether you're at home or on the go, challenge friends from anywhere in the world.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🎮 Tic-Tac-Toe Multiplayer</h2>
+            <div class="app-section">
+                <h3>How to Play</h3>
+                <p>Tic-Tac-Toe Multiplayer is a real-time online multiplayer game. Here's how to get started:</p>
+                <ul>
+                    <li>Create a room or join an existing one with a unique room code</li>
+                    <li>Invite a friend to join the same room code</li>
+                    <li>Take turns placing X or O on the board</li>
+                    <li>First to get 3 in a row wins!</li>
+                    <li>Use the chat feature to communicate with your opponent</li>
+                </ul>
+            </div>
+
+            <div class="app-section">
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Internet connection required</li>
+                    <li>Requires 2 players (invite a friend!)</li>
+                    <li>No AI opponents - play with real people only</li>
+                </ul>
+            </div>
+
+            <div class="app-section">
+                <h3>Troubleshooting</h3>
+                <p><strong>Can't connect to game:</strong></p>
+                <ul>
+                    <li>Check your internet connection</li>
+                    <li>Ensure you're using the same room code as your opponent</li>
+                    <li>Try creating a new room if issues persist</li>
+                </ul>
+                <p><strong>Game not syncing:</strong></p>
+                <ul>
+                    <li>Both players need stable internet connection</li>
+                    <li>Refresh the app if moves aren't appearing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📞 Contact Support</h2>
+            <p>Need help? Have feedback? We'd love to hear from you!</p>
+            
+            <div class="contact-box">
+                <h3>📧 Email Support</h3>
+                <a href="mailto:vylos.ai@gmail.com" class="email-link">vylos.ai@gmail.com</a>
+                <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.9;">We typically respond within 24-48 hours</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🔗 Links</h2>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
