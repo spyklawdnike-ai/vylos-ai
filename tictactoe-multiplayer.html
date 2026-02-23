@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe Multiplayer — Support</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f8fafc;
+    }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 24px 18px 40px; }
+    .hero {
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      border-radius: 18px;
+      color: #fff;
+      padding: 24px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .hero img { width: 84px; height: 84px; border-radius: 18px; object-fit: cover; }
+    .hero h1 { font-size: 1.6rem; }
+    .hero p { opacity: 0.95; }
+    .card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    h2 { color: #4f46e5; margin-bottom: 10px; font-size: 1.15rem; }
+    ul { margin-left: 18px; }
+    li { margin-bottom: 8px; }
+    .links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+    a.btn {
+      text-decoration: none;
+      color: #1f2937;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 9px 12px;
+      font-weight: 600;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="tictactoe-icon.png" alt="Tic-Tac-Toe icon" />
+      <div>
+        <h1>Tic-Tac-Toe Multiplayer</h1>
+        <p>Challenge friends online with room-based real-time matches.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>How to Play</h2>
+      <ul>
+        <li>Create a room or join with a room code.</li>
+        <li>Invite your friend to the same room.</li>
+        <li>Take turns placing X and O.</li>
+        <li>First player to get 3 in a row wins.</li>
+        <li>Use in-game chat while playing.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Requirements</h2>
+      <ul>
+        <li>Internet connection is required.</li>
+        <li>Two real players are required (no AI mode).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Troubleshooting</h2>
+      <p><strong>Can’t connect:</strong></p>
+      <ul>
+        <li>Check internet on both devices.</li>
+        <li>Confirm both players use the exact same room code.</li>
+        <li>Try creating a new room code.</li>
+      </ul>
+      <p><strong>Moves not syncing:</strong></p>
+      <ul>
+        <li>Both players should have stable connectivity.</li>
+        <li>Close and reopen the app, then rejoin.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Support & Privacy</h2>
+      <p>Email: <a href="mailto:vylos.ai@gmail.com">vylos.ai@gmail.com</a></p>
+      <div class="links">
+        <a class="btn" href="privacy-policy.html">Privacy Policy</a>
+        <a class="btn" href="index.html">Back to App Hub</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
